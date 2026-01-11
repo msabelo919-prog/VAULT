@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAULT - Africa's Innovation Marketplace</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== LANDING PAGE (Public) ========== -->
+    <section id="landingPage" class="landing-page">
+        <!-- Header/Navigation -->
+        <header class="landing-header">
+            <nav class="landing-nav">
+                <a href="#landingPage" class="nav-logo">
+                    <img src="images/logo.png" alt="Vault Logo" class="logo-img">
+                    <span class="logo-text">VAULT</span>
+                </a>
+                
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="#landingPage" class="nav-link active">HOME</a></li>
+                        <li><a href="#about" class="nav-link">ABOUT</a></li>
+                        <li><a href="#features" class="nav-link">FEATURES</a></li>
+                        <li><a href="#roles" class="nav-link">ROLES</a></li>
+                        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                        <li><a href="#" class="nav-link login-trigger" onclick="showAuthModal()">LOGIN</a></li>
+                    </ul>
+                    <i class="fas fa-times close-menu" onclick="hideMenu()"></i>
+                </div>
+                <i class="fas fa-bars open-menu" onclick="showMenu()"></i>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section" style="background-image: linear-gradient(rgba(10, 36, 99, 0.85), rgba(10, 36, 99, 0.9)), url('images/banner 1.jpeg');">
+        <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Africa's Innovation Marketplace</h1>
+                    <p class="hero-subtitle">
+                        Your breakthrough idea deserves more than funding.<br />
+                        It needs the right partners, guidance, and a platform to help it scale across Africa.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" class="hero-btn primary" onclick="showAuthModal()">Start Your Journey</a>
+                        <a href="#roles" class="hero-btn secondary">Explore Roles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Transforming Africa's Innovation Landscape</h2>
+                <p class="section-description">
+                    Vault is Africa's premier innovation platform connecting founders, investors, and mentors 
+                    in a thriving ecosystem designed to accelerate African-led solutions.
+                </p>
+                
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/start%20up.jpeg" alt="Startup Collaboration" class="about-img">
+                    </div>
+                    <div class="about-text">
+                        <h3>Building Africa's Future, Together</h3>
+                        <p>We've created a platform where African innovators can find everything they need to succeed:</p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Access to vetted investors focused on Africa</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Expert mentorship from successful African entrepreneurs</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>AI-powered matching for optimal connections</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Africa-specific resources and training</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2 class="section-title">Powerful Features for Growth</h2>
+                <p class="section-description">Everything you need to build, fund, and scale across Africa</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Dynamic Vault Score</h3>
+                        <p>Your score increases with each post, investor save, course completion, and mentorship acceptance.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Smart Connection</h3>
+                        <p>Connect with the right investors and mentors using our intelligent matching algorithm.</p>
+                        <div class="feature-image">
+                            <img src="images/connection.jpeg" alt="Industry Connections" class="feature-img">
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Vault Academy</h3>
+                        <p>Learn from Africa-specific courses taught by successful entrepreneurs and industry experts.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network Effects</h3>
+                        <p>Join Africa's most engaged innovation community across 25+ countries.</p>
+                        <div class="feature-image">
+                            <img src="images/Network.png.png" alt="Network Community" class="feature-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roles Section -->
+        <section id="roles" class="roles-section">
+            <div class="container">
+                <h2 class="section-title">Where Will You Make Your Impact?</h2>
+                <p class="section-description">
+                    We connect African innovators with investors and mentors to help them start, grow and thrive.
+                </p>
+                
+                <div class="roles-grid">
+                    <!-- Founder Card -->
+                    <div class="role-card founder-card">
+                        <div class="role-header">
+                            <div class="role-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Founder</h3>
+                        </div>
+                        <div class="role-image">
+                            <img src="images/start%20up.jpeg" alt="Founder Innovation" class="role-img">
+                        </div>
+                        <div class="role-content">
+                            <p class="role-description">We help you find funding and get expert guidance to scale your idea across Africa.</p>
+                            <div class="role-benefits">
+                                <p><i class="fas fa-check-circle"></i> Dynamic Vault Score tracking</p>
+                                <p><i class="fas fa-check-circle"></i> AI-powered investor matching</p>
+                                <p><i class="fas fa-check-circle"></i> Personalized mentorship</p>
+                                <p><i class="fas fa-check-circle"></i> Africa-focused courses</p>
+                            </div>
+                            <button class="role-btn founder-btn" onclick="signupAsRole('founder')">
+                                Join as Founder
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Investor Card -->
+                    <div class="role-card investor-card">
+                        <div class="role-header">
+                            <div class="role-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h3>Investor</h3>
+                        </div>
+                        <div class="role-image">
+                            <img src="images/about.jpg" alt="Investment Opportunities" class="role-img">
+                        </div>
+                        <div class="role-content">
+                            <p class="role-description">Access Africa's most promising, AI-vetted startups with real growth potential.</p>
+                            <div class="role-benefits">
+                                <p><i class="fas fa-check-circle"></i> Pre-screened deal flow</p>
+                                <p><i class="fas fa-check-circle"></i> Detailed founder analytics</p>
+                                <p><i class="fas fa-check-circle"></i> Portfolio tracking dashboard</p>
+                                <p><i class="fas fa-check-circle"></i> Sector intelligence reports</p>
+                            </div>
+                            <button class="role-btn investor-btn" onclick="signupAsRole('investor')">
+                                Join as Investor
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Mentor Card -->
+                    <div class="role-card mentor-card">
+                        <div class="role-header">
+                            <div class="role-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3>Mentor</h3>
+                        </div>
+                        <div class="role-image">
+                            <img src="images/connection.jpeg" alt="Mentorship Guidance" class="role-img">
+                        </div>
+                        <div class="role-content">
+                            <p class="role-description">Guide African founders to success while building your legacy as an innovation leader.</p>
+                            <div class="role-benefits">
+                                <p><i class="fas fa-check-circle"></i> Founder matching system</p>
+                                <p><i class="fas fa-check-circle"></i> Course creation platform</p>
+                                <p><i class="fas fa-check-circle"></i> Community recognition</p>
+                                <p><i class="fas fa-check-circle"></i> Impact analytics</p>
+                            </div>
+                            <button class="role-btn mentor-btn" onclick="signupAsRole('mentor')">
+                                Join as Mentor
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Join Africa's Innovation Revolution?</h2>
+                <p>Join thousands of innovators, investors, and mentors building Africa's future.</p>
+                <a href="#" class="cta-btn" onclick="showAuthModal()">Get Started Free</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="Vault Logo" class="footer-logo-img">
+                            <span>VAULT</span>
+                        </div>
+                        <p class="footer-description">
+                            Africa's premier innovation marketplace connecting founders, investors, and mentors.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#landingPage">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#roles">Roles</a></li>
+                            <li><a href="#" onclick="showAuthModal()">Login</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> hello@vault.africa</li>
+                            <li><i class="fas fa-phone"></i> +27 67 856 5485
+                            <li><i class="fas fa-map-marker-alt"></i> Durban, South Africa
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 VAULT all rights reserved. |<a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- ========== AUTH MODAL (Fixed & Responsive) ========== -->
+    <div id="authModal" class="auth-modal hidden">
+        <div class="auth-overlay" onclick="hideAuthModal()"></div>
+        <div class="auth-container">
+            <div class="auth-header">
+                <button class="auth-close" onclick="hideAuthModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="auth-logo">
+                    <img src="images/logo.png" alt="Vault Logo" class="auth-logo-img">
+                    <h1>VAULT</h1>
+                    <p class="tagline">Africa's Innovation & Investment Marketplace</p>
+                </div>
+            </div>
+            
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login" onclick="switchAuthTab('login')">Login</button>
+                <button class="auth-tab" data-tab="signup" onclick="switchAuthTab('signup')">Sign Up</button>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required value="founder@vault.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required value="password123">
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginRole">Login as</label>
+                    <select id="loginRole" required>
+                        <option value="">Select role</option>
+                        <option value="founder" selected>Founder</option>
+                        <option value="investor">Investor</option>
+                        <option value="mentor">Mentor</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-sign-in-alt"></i> Login to Vault
+                </button>
+                
+                <div class="auth-footer">
+                    <p>Test accounts: founder@vault.com / investor@vault.com / mentor@vault.com (password123)</p>
+                </div>
+            </form>
+            
+            <!-- Signup Form -->
+            <form id="signupForm" class="auth-form">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password (min. 6 characters)" required minlength="6">
+                </div>
+                
+                <div class="form-group">
+                    <label for="signupRole">I want to join as a</label>
+                    <select id="signupRole" required>
+                        <option value="">Select role</option>
+                        <option value="founder">Founder / Innovator</option>
+                        <option value="investor">Investor</option>
+                        <option value="mentor">Mentor</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-user-plus"></i> Create Account
+                </button>
+                
+                <div class="auth-footer">
+                    <p>By signing up, you agree to our <a href="#">Terms</a> & <a href="#">Privacy Policy</a></p>
+                </div>
+            </form>
+            
+            <div class="shared-link-notice">
+                <p><i class="fas fa-link"></i> Access via shared link? <a href="#" id="useSharedLink">Click here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== MAIN APP (Hidden until login) ========== -->
+    <div id="mainApp" class="main-app hidden">
+        <!-- Platform content loads here after login -->
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="data.js"></script>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Landing Page JavaScript -->
+    <script>
+        // Toggle Menu Functions
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu() {
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+        }
+        
+        function hideMenu() {
+            navLinks.style.right = "-250px";
+            setTimeout(() => {
+                if (window.innerWidth <= 768) {
+                    navLinks.style.display = "none";
+                }
+            }, 300);
+        }
+        
+        // Close menu when clicking outside on mobile
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 768) {
+                const isClickInsideNav = navLinks.contains(event.target);
+                const isClickOnMenuIcon = event.target.classList.contains('open-menu') || 
+                                         event.target.closest('.open-menu');
+                
+                if (!isClickInsideNav && !isClickOnMenuIcon && navLinks.style.right === "0px") {
+                    hideMenu();
+                }
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if(targetId === '#' || targetId === '#!') return;
+                
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Hide mobile menu if open
+                    if(window.innerWidth <= 768) {
+                        hideMenu();
+                    }
+                }
+            });
+        });
+        
+        // Show auth modal from landing page
+        function showAuthModal() {
+            document.getElementById('authModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Set default tab based on context
+            const activeTab = document.querySelector('.auth-tab.active');
+            if (!activeTab || activeTab.dataset.tab === 'login') {
+                switchAuthTab('login');
+            }
+        }
+        
+        // Hide auth modal
+        function hideAuthModal() {
+            document.getElementById('authModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Auth tab switching
+        function switchAuthTab(tab) {
+            // Update tabs
+            document.querySelectorAll('.auth-tab').forEach(t => {
+                t.classList.remove('active');
+                if (t.dataset.tab === tab) {
+                    t.classList.add('active');
+                }
+            });
+            
+            // Update forms
+            document.querySelectorAll('.auth-form').forEach(form => {
+                form.classList.remove('active');
+                if (form.id === `${tab}Form`) {
+                    form.classList.add('active');
+                }
+            });
+            
+            // Pre-select role in signup if coming from role button
+            if (tab === 'signup' && window.preSelectedRole) {
+                document.getElementById('signupRole').value = window.preSelectedRole;
+            }
+        }
+        
+        // Sign up as specific role
+        function signupAsRole(role) {
+            window.preSelectedRole = role;
+            showAuthModal();
+            switchAuthTab('signup');
+            
+            // Highlight the selected role in dropdown
+            setTimeout(() => {
+                const roleSelect = document.getElementById('signupRole');
+                if (roleSelect) {
+                    roleSelect.value = role;
+                    
+                    // Optional: Show a message about the selected role
+                    showToast(`Joining as ${role.charAt(0).toUpperCase() + role.slice(1)}`, 'info');
+                }
+            }, 100);
+        }
+        
+        // Toast notification function
+        function showToast(message, type = 'info') {
+            const container = document.getElementById('toastContainer') || (() => {
+                const div = document.createElement('div');
+                div.id = 'toastContainer';
+                div.className = 'toast-container';
+                document.body.appendChild(div);
+                return div;
+            })();
+            
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type}`;
+            
+            let icon = 'info-circle';
+            if (type === 'success') icon = 'check-circle';
+            if (type === 'error') icon = 'exclamation-circle';
+            
+            toast.innerHTML = `
+                <div class="toast-icon">
+                    <i class="fas fa-${icon}"></i>
+                </div>
+                <div class="toast-content">
+                    <p>${message}</p>
+                </div>
+                <button class="toast-close" onclick="this.parentElement.remove()">
+                    <i class="fas fa-times"></i>
+                </button>
+            `;
+            
+            container.appendChild(toast);
+            
+            // Auto-remove after 5 seconds
+            setTimeout(() => {
+                if (toast.parentElement) {
+                    toast.remove();
+                }
+            }, 5000);
+        }
+        
+        // Update active nav on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPos = window.scrollY + 100;
+            
+            let currentSection = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if(scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // If at top, highlight home
+            if (scrollPos < 100) {
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                document.querySelector('a[href="#landingPage"]').classList.add('active');
+            }
+        });
+        
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && !document.getElementById('authModal').classList.contains('hidden')) {
+                    hideAuthModal();
+                }
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    navLinks.style.right = "0";
+                    navLinks.style.display = "flex";
+                } else {
+                    navLinks.style.right = "-250px";
+                    navLinks.style.display = "none";
+                }
+            });
+            
+            // Set initial state based on window size
+            if (window.innerWidth > 768) {
+                navLinks.style.right = "0";
+                navLinks.style.display = "flex";
+            }
+        });
+    </script>
+       <!-- ========== ENHANCEMENT LAYER (Non-invasive additions) ========== --
+<!-- ========== ENHANCEMENT LAYER (Non-invasive additions) ========== -->
+<div id="enhancement-layer" style="display: none;">
+    <!-- Background Image Overlay for First Blue Section - COMMENTED OUT FOR NOW -->
+    <!-- <div class="enhanced-bg-overlay" data-target-section="hero-section"></div> -->
+    
+    <!-- Smooth Scroll-to-Top Button -->
+    <button id="enhanced-scroll-top" class="enhanced-ui-element" aria-label="Scroll to top" style="display: none;">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Dark/Light Mode Toggle -->
+    <button id="enhanced-theme-toggle" class="enhanced-ui-element" aria-label="Toggle dark/light mode" style="display: none;">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+    
+    <!-- Enhanced Authentication Layer -->
+    <div id="enhanced-auth-overlay" class="enhanced-modal-overlay" style="display: none;">
+        <div id="enhanced-auth-container" class="enhanced-modal-container">
+            <!-- Auth content will be dynamically loaded here -->
+        </div>
+    </div>
+    
+    <!-- Role-Based Dashboards (Initially hidden) -->
+    <div id="enhanced-dashboard-layer" class="enhanced-dashboard-container" style="display: none;">
+        <!-- Dashboard navigation -->
+        <nav id="enhanced-dashboard-nav" class="enhanced-dashboard-nav" data-role="none">
+            <div class="enhanced-nav-header">
+                <div class="enhanced-nav-logo">
+                    <img src="images/logo.png" alt="Vault Logo" class="enhanced-logo-img">
+                    <span class="enhanced-logo-text">VAULT</span>
+                    <span class="enhanced-user-role" id="enhanced-current-role"></span>
+                </div>
+                <div class="enhanced-nav-controls">
+                    <button class="enhanced-nav-control" id="enhanced-role-switcher" title="Switch Role">
+                        <i class="fas fa-random"></i>
+                    </button>
+                    <button class="enhanced-nav-control" id="enhanced-notifications" title="Notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="enhanced-notification-badge">0</span>
+                    </button>
+                    <button class="enhanced-nav-control" id="enhanced-profile-menu" title="Profile">
+                        <i class="fas fa-user-circle"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="enhanced-nav-links">
+                <a href="#" class="enhanced-nav-link" data-dashboard="overview">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="enhanced-nav-link" data-dashboard="feed">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Feed</span>
+                </a>
+                <a href="#" class="enhanced-nav-link" data-dashboard="discover">
+                    <i class="fas fa-compass"></i>
+                    <span>Discover</span>
+                </a>
+                <a href="#" class="enhanced-nav-link" data-dashboard="profile">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="enhanced-nav-link" id="enhanced-logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </nav>
+        
+        <!-- Dashboard content area -->
+        <div id="enhanced-dashboard-content" class="enhanced-dashboard-content">
+            <!-- Role-specific dashboards will be loaded here -->
+            <div id="enhanced-dashboard-loading" class="enhanced-loading">
+                <div class="enhanced-loading-spinner"></div>
+                <p>Loading your dashboard...</p>
+            </div>
+        </div>
+        
+        <!-- Quick action buttons -->
+        <div class="enhanced-quick-actions" style="display: none;">
+            <button class="enhanced-quick-action" data-action="create-post">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button class="enhanced-quick-action" data-action="search">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="enhanced-quick-action" data-action="help">
+                <i class="fas fa-question"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Role Switching Modal -->
+    <div id="enhanced-role-modal" class="enhanced-modal-overlay" style="display: none;">
+        <div class="enhanced-modal-container enhanced-role-modal">
+            <h3>Switch Role</h3>
+            <p>Select a role to switch to:</p>
+            <div class="enhanced-role-options">
+                <button class="enhanced-role-option" data-role="founder">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Founder</span>
+                    <small>Innovator/Entrepreneur</small>
+                </button>
+                <button class="enhanced-role-option" data-role="investor">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Investor</span>
+                    <small>Angel/VC/Partner</small>
+                </button>
+                <button class="enhanced-role-option" data-role="mentor">
+                    <i class="fas fa-hands-helping"></i>
+                    <span>Mentor</span>
+                    <small>Expert/Advisor</small>
+                </button>
+            </div>
+            <button class="enhanced-btn enhanced-btn-secondary" id="enhanced-close-role-modal">
+                Cancel
+            </button>
+        </div>
+    </div>
+    
+    <!-- Notification Panel -->
+    <div id="enhanced-notifications-panel" class="enhanced-notifications-panel" style="display: none;">
+        <div class="enhanced-notifications-header">
+            <h4>Notifications</h4>
+            <button class="enhanced-notifications-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="enhanced-notifications-list">
+            <!-- Notifications will be loaded here -->
+            <div class="enhanced-notification-empty">
+                <i class="fas fa-bell-slash"></i>
+                <p>No new notifications</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Profile Menu -->
+    <div id="enhanced-profile-panel" class="enhanced-profile-panel" style="display: none;">
+        <div class="enhanced-profile-header">
+            <div class="enhanced-profile-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="enhanced-profile-info">
+                <h5 id="enhanced-user-name">User Name</h5>
+                <small id="enhanced-user-email">user@example.com</small>
+            </div>
+        </div>
+        <div class="enhanced-profile-menu">
+            <a href="#" class="enhanced-profile-item" data-action="settings">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+            <a href="#" class="enhanced-profile-item" data-action="help">
+                <i class="fas fa-question-circle"></i>
+                <span>Help & Support</span>
+            </a>
+            <a href="#" class="enhanced-profile-item" data-action="about">
+                <i class="fas fa-info-circle"></i>
+                <span>About Enhanced Features</span>
+            </a>
+            <hr class="enhanced-profile-divider">
+            <a href="#" class="enhanced-profile-item enhanced-logout" data-action="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ENHANCEMENT STYLES THAT FIX THE WHITE SCREEN -->
+<style>
+    /* CRITICAL FIX: Ensure original site stays visible */
+    #landingPage {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+        position: relative !important;
+        z-index: 1 !important;
+        pointer-events: auto !important;
+    }
+    
+    /* Hide enhancement layer by default */
+    #enhancement-layer {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        pointer-events: none;
+    }
+    
+    /* Only show dashboard when explicitly activated */
+    .enhanced-dashboard-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f8f9fa;
+        z-index: 10000;
+        display: none;
+    }
+    
+    /* Hide all overlays by default */
+    .enhanced-modal-overlay,
+    .enhanced-notifications-panel,
+    .enhanced-profile-panel,
+    .enhanced-quick-actions,
+    #enhanced-scroll-top,
+    #enhanced-theme-toggle {
+        display: none !important;
+    }
+    
+    /* Fix body overflow */
+    body {
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    /* Make sure original hero section stays blue */
+    .hero-section {
+        background: linear-gradient(rgba(10, 36, 99, 0.85), rgba(10, 36, 99, 0.9)), url('images/banner1.png') !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    
+    /* Remove any enhancement overlays on hero */
+    .hero-section::before,
+    .hero-section::after {
+        display: none !important;
+    }
+</style>
+
+<!-- Enhanced CSS Files - LOAD LAST TO PREVENT OVERRIDES -->
+<link rel="stylesheet" href="enhancements-public.css">
+<link rel="stylesheet" href="enhancements-auth.css">
+<link rel="stylesheet" href="enhancements-dashboard.css">
+<link rel="stylesheet" href="enhancements-responsive.css">
+
+<!-- Enhanced JavaScript Modules -->
+<script src="enhancements-integration.js"></script>
+<script src="enhancements-auth.js"></script>
+<script src="enhancements-dashboard.js"></script>
+<script src="enhancements-ui.js"></script>
+<script src="enhancements-data.js"></script>
+
+<!-- INITIALIZATION SCRIPT TO PREVENT WHITE SCREEN -->
+<script>
+    // Wait for page to load
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Enhancements initialized safely');
+        
+        // Make sure original site is visible
+        const landingPage = document.getElementById('landingPage');
+        if (landingPage) {
+            landingPage.style.cssText = 'opacity: 1 !important; visibility: visible !important; display: block !important;';
+        }
+        
+        // Hide enhancement layer until needed
+        const enhancementLayer = document.getElementById('enhancement-layer');
+        if (enhancementLayer) {
+            enhancementLayer.style.display = 'none';
+        }
+        
+        // Hide dashboard layer
+        const dashboardLayer = document.getElementById('enhanced-dashboard-layer');
+        if (dashboardLayer) {
+            dashboardLayer.style.display = 'none';
+        }
+        
+        // Test: Add a button to manually show dashboard (for testing)
+        const testButton = document.createElement('button');
+        testButton.innerHTML = 'TEST: Show Enhanced Dashboard';
+        testButton.style.cssText = 'position: fixed; top: 10px; left: 10px; z-index: 10001; padding: 10px; background: #0a2463; color: white; border: none; border-radius: 5px; font-size: 12px; cursor: pointer;';
+        testButton.onclick = function() {
+            // Hide original site
+            if (landingPage) {
+                landingPage.style.opacity = '0.1';
+                landingPage.style.pointerEvents = 'none';
+            }
+            
+            // Show enhanced dashboard
+            if (dashboardLayer) {
+                dashboardLayer.style.display = 'block';
+                
+                // Load founder dashboard for testing
+                if (window.enhancedDashboards && window.enhancedDashboards.loadRoleDashboard) {
+                    window.enhancedDashboards.loadRoleDashboard('founder');
+                }
+                
+                // Update user info
+                document.getElementById('enhanced-user-name').textContent = 'Test User';
+                document.getElementById('enhanced-current-role').textContent = 'Founder';
+            }
+        };
+        document.body.appendChild(testButton);
+    });
+</script>
+    
+    <!-- JavaScript Files -->
+    <script src="data.js"></script>
+    <script src="auth.js"></script>
+     <script src="enhancements.ui.js"></script> 
+     <script src="dashboard.js"></script>  
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,281 @@
+/* ========== ENHANCEMENTS-PUBLIC.CSS ========== */
+/* Visual enhancements that work alongside original CSS */
+/* All classes are prefixed with 'enhanced-' to avoid conflicts */
+
+/* Background Image Overlay for First Blue Section */
+.enhanced-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Ensure text remains readable over background */
+.hero-section {
+    position: relative;
+}
+
+.hero-section > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Smooth Scroll-to-Top Button */
+#enhanced-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #0a2463;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(10, 36, 99, 0.3);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9998;
+    transform: translateY(10px);
+}
+
+#enhanced-scroll-top.enhanced-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#enhanced-scroll-top:hover {
+    background: #1a3c8f;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(10, 36, 99, 0.4);
+}
+
+#enhanced-scroll-top:active {
+    transform: translateY(-1px);
+}
+
+/* Dark/Light Mode Toggle */
+#enhanced-theme-toggle {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #0a2463;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(10, 36, 99, 0.3);
+    transition: all 0.3s ease;
+    z-index: 9998;
+}
+
+#enhanced-theme-toggle:hover {
+    background: #1a3c8f;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(10, 36, 99, 0.4);
+}
+
+/* Enhanced UI Elements Base */
+.enhanced-ui-element {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Enhanced Hover Effects */
+.enhanced-hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.enhanced-active {
+    transform: translateY(1px) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Enhanced Toast Container */
+.enhanced-toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.enhanced-toast {
+    background: white;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    animation: enhanced-slide-in 0.3s ease;
+    min-width: 280px;
+    max-width: 350px;
+    border-left: 4px solid #0a2463;
+}
+
+.enhanced-toast-success {
+    border-left-color: #2ecc71;
+}
+
+.enhanced-toast-error {
+    border-left-color: #e74c3c;
+}
+
+.enhanced-toast-warning {
+    border-left-color: #f39c12;
+}
+
+.enhanced-toast-info {
+    border-left-color: #3498db;
+}
+
+.enhanced-toast-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.enhanced-toast-success .enhanced-toast-icon {
+    color: #2ecc71;
+}
+
+.enhanced-toast-error .enhanced-toast-icon {
+    color: #e74c3c;
+}
+
+.enhanced-toast-warning .enhanced-toast-icon {
+    color: #f39c12;
+}
+
+.enhanced-toast-info .enhanced-toast-icon {
+    color: #3498db;
+}
+
+.enhanced-toast-content {
+    flex: 1;
+}
+
+.enhanced-toast-content p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.enhanced-toast-close {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 5px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.enhanced-toast-close:hover {
+    background: #f8f9fa;
+    color: #333;
+}
+
+@keyframes enhanced-slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Enhanced Loading Overlay */
+.enhanced-loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10001;
+    backdrop-filter: blur(5px);
+}
+
+.enhanced-loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0a2463;
+    border-radius: 50%;
+    animation: enhanced-spin 1s linear infinite;
+    margin-bottom: 15px;
+}
+
+.enhanced-loading-overlay p {
+    color: #0a2463;
+    font-weight: 500;
+}
+
+@keyframes enhanced-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Theme Variables for Dark Mode */
+[data-enhanced-theme="dark"] .enhanced-ui-element {
+    background: #2d3748;
+    color: #e2e8f0;
+}
+
+[data-enhanced-theme="dark"] .enhanced-toast {
+    background: #2d3748;
+    border-left-color: #4a5568;
+}
+
+[data-enhanced-theme="dark"] .enhanced-toast-content p {
+    color: #e2e8f0;
+}
+
+[data-enhanced-theme="dark"] .enhanced-toast-close {
+    color: #a0aec0;
+}
+
+[data-enhanced-theme="dark"] .enhanced-toast-close:hover {
+    background: #4a5568;
+    color: #e2e8f0;
+}

@@ -1,0 +1,506 @@
+/* ========== ENHANCEMENTS-RESPONSIVE.CSS ========== */
+/* Responsive styles for enhanced features */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    /* Dashboard Navigation */
+    .enhanced-nav-links {
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+    
+    .enhanced-nav-link span {
+        display: none;
+    }
+    
+    .enhanced-nav-link {
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 0.8rem;
+    }
+    
+    .enhanced-nav-link i {
+        font-size: 1.2rem;
+    }
+    
+    /* Stats Grid */
+    .enhanced-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Overview Sections */
+    .enhanced-overview-sections {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Discover Grid */
+    .enhanced-discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Quick Actions */
+    .enhanced-quick-actions {
+        bottom: 20px;
+        padding: 8px;
+    }
+    
+    .enhanced-quick-action {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    /* Notifications & Profile Panels */
+    .enhanced-notifications-panel,
+    .enhanced-profile-panel {
+        width: 320px;
+        right: 15px;
+    }
+}
+
+/* Mobile (480px - 768px) */
+@media (max-width: 768px) {
+    /* Background Overlay */
+    .enhanced-bg-overlay {
+        opacity: 0.2;
+    }
+    
+    /* UI Buttons */
+    #enhanced-scroll-top,
+    #enhanced-theme-toggle {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    #enhanced-theme-toggle {
+        bottom: 75px;
+    }
+    
+    /* Dashboard Container */
+    .enhanced-dashboard-container {
+        padding: 0;
+    }
+    
+    /* Dashboard Navigation */
+    .enhanced-nav-header {
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .enhanced-nav-controls {
+        align-self: flex-end;
+        margin-top: -45px;
+    }
+    
+    .enhanced-nav-links {
+        padding: 8px 15px;
+    }
+    
+    /* Dashboard Content */
+    .enhanced-dashboard-content {
+        padding: 15px;
+    }
+    
+    /* Welcome Banner */
+    .enhanced-welcome-banner {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .enhanced-welcome-banner h2 {
+        font-size: 1.5rem;
+    }
+    
+    .enhanced-welcome-banner p {
+        font-size: 0.95rem;
+    }
+    
+    /* Stats Grid */
+    .enhanced-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .enhanced-stat-card {
+        padding: 15px;
+    }
+    
+    /* Sections */
+    .enhanced-section {
+        padding: 20px;
+    }
+    
+    /* Pipeline & Deal Flow */
+    .enhanced-pipeline,
+    .enhanced-deal-flow {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .enhanced-pipeline-stage,
+    .enhanced-deal-stage {
+        flex: 1 0 calc(50% - 10px);
+        margin: 0;
+        padding: 12px 8px;
+    }
+    
+    .enhanced-stage-count {
+        font-size: 1.3rem;
+    }
+    
+    /* Quick Actions Grid */
+    .enhanced-quick-actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .enhanced-action-btn {
+        padding: 15px 8px;
+    }
+    
+    /* Feed */
+    .enhanced-feed-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .enhanced-feed-header .enhanced-btn {
+        width: 100%;
+    }
+    
+    .enhanced-post-card {
+        padding: 20px;
+    }
+    
+    .enhanced-post-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .enhanced-post-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+    
+    .enhanced-post-actions {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    /* Discover */
+    .enhanced-discover-filters {
+        flex-direction: column;
+    }
+    
+    .enhanced-filter {
+        min-width: 100%;
+    }
+    
+    .enhanced-discover-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Profile */
+    .enhanced-profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .enhanced-profile-avatar-large {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+    
+    .enhanced-profile-sections {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Quick Actions (Floating) */
+    .enhanced-quick-actions {
+        bottom: 15px;
+        padding: 8px;
+        border-radius: 25px;
+    }
+    
+    .enhanced-quick-action {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    /* Notifications & Profile Panels */
+    .enhanced-notifications-panel,
+    .enhanced-profile-panel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        max-width: 400px;
+        box-shadow: none;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        display: flex !important;
+        flex-direction: column;
+    }
+    
+    .enhanced-notifications-panel.active,
+    .enhanced-profile-panel.active {
+        transform: translateX(0);
+    }
+    
+    .enhanced-notifications-header,
+    .enhanced-profile-header {
+        padding: 15px;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    /* Toast Notifications */
+    .enhanced-toast {
+        min-width: 250px;
+        max-width: calc(100vw - 40px);
+        margin: 0 20px;
+    }
+    
+    .enhanced-toast-container {
+        bottom: 100px;
+        right: 0;
+        left: 0;
+        align-items: center;
+    }
+    
+    /* Modal Overlays */
+    .enhanced-modal-overlay {
+        padding: 10px;
+    }
+    
+    .enhanced-modal-container {
+        max-height: 95vh;
+        margin: 0;
+        border-radius: 12px;
+    }
+    
+    .enhanced-role-modal {
+        padding: 20px;
+    }
+    
+    .enhanced-role-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+    /* UI Buttons */
+    #enhanced-scroll-top,
+    #enhanced-theme-toggle {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    #enhanced-theme-toggle {
+        bottom: 65px;
+    }
+    
+    /* Dashboard Content */
+    .enhanced-dashboard-content {
+        padding: 12px;
+    }
+    
+    /* Stats */
+    .enhanced-stat-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .enhanced-stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+    
+    /* Pipeline & Deal Flow */
+    .enhanced-pipeline-stage,
+    .enhanced-deal-stage {
+        flex: 1 0 100%;
+    }
+    
+    /* Quick Actions Grid */
+    .enhanced-quick-actions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Feed Post */
+    .enhanced-post-body p {
+        font-size: 0.95rem;
+    }
+    
+    .enhanced-post-tags {
+        gap: 5px;
+    }
+    
+    .enhanced-tag {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+    
+    /* Profile Stats */
+    .enhanced-profile-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Quick Actions (Floating) */
+    .enhanced-quick-actions {
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 30px);
+        justify-content: space-around;
+        padding: 6px;
+        border-radius: 20px;
+    }
+    
+    .enhanced-quick-action {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+    }
+    
+    /* Toast Notifications */
+    .enhanced-toast {
+        min-width: 200px;
+        padding: 12px 15px;
+        margin: 0 10px;
+    }
+    
+    .enhanced-toast-icon {
+        font-size: 1rem;
+    }
+    
+    .enhanced-toast-content p {
+        font-size: 0.85rem;
+    }
+    
+    /* Loading Overlay */
+    .enhanced-loading-spinner {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .enhanced-loading-overlay p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Landscape Orientation */
+@media (max-height: 600px) and (orientation: landscape) {
+    /* Dashboard Navigation */
+    .enhanced-nav-header {
+        padding: 10px 15px;
+    }
+    
+    .enhanced-nav-links {
+        padding: 5px 0;
+    }
+    
+    .enhanced-nav-link {
+        padding: 8px 12px;
+    }
+    
+    /* Dashboard Content */
+    .enhanced-dashboard-content {
+        padding: 12px;
+    }
+    
+    /* Welcome Banner */
+    .enhanced-welcome-banner {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    /* Stats Grid */
+    .enhanced-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .enhanced-stat-card {
+        padding: 12px;
+    }
+    
+    /* Sections */
+    .enhanced-section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    /* Quick Actions (Floating) */
+    .enhanced-quick-actions {
+        bottom: 10px;
+        padding: 5px;
+    }
+    
+    .enhanced-quick-action {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    /* Notifications & Profile Panels */
+    .enhanced-notifications-panel,
+    .enhanced-profile-panel {
+        max-height: 80vh;
+        top: 50%;
+        transform: translate(100%, -50%);
+    }
+    
+    .enhanced-notifications-panel.active,
+    .enhanced-profile-panel.active {
+        transform: translate(0, -50%);
+    }
+}
+
+/* High DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Enhance background image for retina */
+    .enhanced-bg-overlay {
+        background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=3840&q=80');
+    }
+}
+
+/* Print Styles */
+@media print {
+    /* Hide all enhanced elements when printing */
+    #enhancement-layer,
+    .enhanced-bg-overlay,
+    #enhanced-scroll-top,
+    #enhanced-theme-toggle,
+    .enhanced-dashboard-container,
+    .enhanced-modal-overlay,
+    .enhanced-toast-container,
+    .enhanced-loading-overlay,
+    .enhanced-notifications-panel,
+    .enhanced-profile-panel,
+    .enhanced-quick-actions {
+        display: none !important;
+    }
+}

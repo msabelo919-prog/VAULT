@@ -1,0 +1,257 @@
+/* ========== ENHANCEMENTS-AUTH.CSS ========== */
+/* Enhanced authentication styles - Non-invasive overlay */
+
+/* Enhanced Auth Overlay */
+.enhanced-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10002;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.enhanced-modal-container {
+    background: white;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 450px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    animation: enhanced-modal-appear 0.3s ease;
+}
+
+@keyframes enhanced-modal-appear {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Enhanced Role Selection */
+.enhanced-role-modal {
+    max-width: 500px;
+    padding: 30px;
+}
+
+.enhanced-role-modal h3 {
+    color: #0a2463;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.enhanced-role-modal p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.enhanced-role-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.enhanced-role-option {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.enhanced-role-option:hover {
+    background: white;
+    border-color: #0a2463;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(10, 36, 99, 0.1);
+}
+
+.enhanced-role-option[data-role="founder"]:hover {
+    border-color: #3498db;
+}
+
+.enhanced-role-option[data-role="investor"]:hover {
+    border-color: #9b59b6;
+}
+
+.enhanced-role-option[data-role="mentor"]:hover {
+    border-color: #1abc9c;
+}
+
+.enhanced-role-option i {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.enhanced-role-option[data-role="founder"] i {
+    color: #3498db;
+}
+
+.enhanced-role-option[data-role="investor"] i {
+    color: #9b59b6;
+}
+
+.enhanced-role-option[data-role="mentor"] i {
+    color: #1abc9c;
+}
+
+.enhanced-role-option span {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+.enhanced-role-option small {
+    color: #666;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* Enhanced Buttons */
+.enhanced-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    min-height: 44px;
+}
+
+.enhanced-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.enhanced-btn:active {
+    transform: translateY(0);
+}
+
+.enhanced-btn-primary {
+    background: #2ecc71;
+    color: white;
+}
+
+.enhanced-btn-primary:hover {
+    background: #27ae60;
+}
+
+.enhanced-btn-secondary {
+    background: #f8f9fa;
+    color: #333;
+    border: 1px solid #dee2e6;
+}
+
+.enhanced-btn-secondary:hover {
+    background: #e9ecef;
+}
+
+.enhanced-btn-small {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    min-height: 36px;
+}
+
+/* Enhanced form enhancements */
+.enhanced-form-group {
+    margin-bottom: 20px;
+}
+
+.enhanced-form-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.enhanced-form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.enhanced-form-input:focus {
+    outline: none;
+    border-color: #0a2463;
+    box-shadow: 0 0 0 3px rgba(10, 36, 99, 0.1);
+}
+
+.enhanced-form-select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.enhanced-form-select:focus {
+    outline: none;
+    border-color: #0a2463;
+    box-shadow: 0 0 0 3px rgba(10, 36, 99, 0.1);
+}
+
+/* Password strength indicator */
+.enhanced-password-strength {
+    margin-top: 5px;
+    height: 4px;
+    background: #e9ecef;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.enhanced-password-strength-meter {
+    height: 100%;
+    width: 0%;
+    background: #e74c3c;
+    transition: all 0.3s ease;
+}
+
+.enhanced-password-strength-meter.weak {
+    width: 33%;
+    background: #e74c3c;
+}
+
+.enhanced-password-strength-meter.medium {
+    width: 66%;
+    background: #f39c12;
+}
+
+.enhanced-password-strength-meter.strong {
+    width: 100%;
+    background: #2ecc71;
+}
